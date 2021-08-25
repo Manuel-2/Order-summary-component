@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --pale-blue:hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --active-blue: hsl(245, 51%, 56%);
+    --very-pale-blue:hsl(225, 100%, 98%);
+    --desaturated-blue:hsl(224, 23%, 55%);
+    --dark-blue:hsl(223, 47%, 23%);
+
+    --paragraph-size: 1.6rem;
+
+    --font: 'Red Hat Display';
+
+    --corner-radius: 18px;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: var(--font);
+}
+
+body{
+    font-size: var(--paragraph-size);
+    background: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--pale-blue);
+}
+
+.card{
+    width: 450px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__banner{
+    border-top-right-radius: var(--corner-radius);
+    border-top-left-radius: var(--corner-radius);
+}
+
+.card__main{
+    background-color: var(--very-pale-blue);
+    border-bottom-left-radius: var(--corner-radius);
+    border-bottom-right-radius: var(--corner-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.card__title{
+    color: var(--dark-blue);
+    font-size: 2.4rem;
+    font-weight: 900;
+    margin-top: 25px;
+}
+
+.card__description{
+    text-align: center;
+    margin-top: 18px;
+    max-width: 70%;
+    color: var(--desaturated-blue);
+    line-height: 20px;
+}
+
+.card__opcion{
+    margin-top: 20px;
+    display: flex;
+    background-color: #00000005;
+    padding: 20px;
+    align-items: center;
+    width: 85%;
+    justify-content: space-between;
+    border-radius: var(--corner-radius);
+}
+
+.opcion__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 48%;
+}
+
+.plan{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45px;
+}
+
+.plan__name{
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.plan__price{
+    color: var(--desaturated-blue);
+}
+
+.card__change-plan-button{
+    color: var(--bright-blue);
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.card__change-plan-button:active{
+    color: var(--active-blue);
+}
+
+button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.card__buttons{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.card__button{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(149, 149, 149);
+    border-radius: 12px;
+}
+
+.card__button--afirmative{
+    margin-bottom: 15px;
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    font-weight: 700;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -60px;
+}
+
+.card__button--afirmative:active{
+    background-color: var(--active-blue);
+}
+
+.card__button--negative{
+    background-color: #ffffff00;
+    color: var(--desaturated-blue);
+}
+
+.card__button--negative:active{
+    background-color: #0000000c;
+    color: var(--dark-blue);
+}
