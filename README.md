@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [Solution URL](https://your-solution-url.com)
 - [Live Site URL](https://order-summary-component-navy.vercel.app/)
 
 ## My process
