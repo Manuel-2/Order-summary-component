@@ -158,3 +158,24 @@ button, input[type="submit"], input[type="reset"] {
     background-color: #0000000c;
     color: var(--dark-blue);
 }
+
+@media (max-width: 500px) {
+
+    .card{
+        width: 90vw;
+    }
+
+    .card__description{
+        max-width: 90%;
+    }
+
+    .card__opcion{
+        width: 90%;
+        padding: 20px 5px;
+    }
+
+    .card__buttons{
+        width: 90%;
+    }
+
+}
